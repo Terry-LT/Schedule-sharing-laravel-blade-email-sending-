@@ -57,7 +57,8 @@ class ScheduleFileUpdated extends Mailable
     public function attachments()
     {
         return [
-            Attachment::fromPath($this->filePath)->as($this->fileName),
+            Attachment::fromPath($this->filePath)->
+            as($this->fileName.".".pathinfo($this->filePath, PATHINFO_EXTENSION)),
         ];
     }
 }
