@@ -42,6 +42,18 @@ Update Schedule File
             </div>
             @enderror
           </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="1" name="send_notification_email" id="send_notification_email">
+            <label class="form-check-label" for="send_notification_email">
+              Send Notification Email
+            </label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="1" name="send_notification_telegram" id="send_notification_telegram">
+            <label class="form-check-label" for="send_notification_telegram">
+              Send Telegram Notification
+            </label>
+        </div>
         <div>
             <button type="submit" class="btn btn-primary">Update</button>
         </div>
